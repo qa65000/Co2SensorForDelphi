@@ -1,0 +1,74 @@
+object Form20: TForm20
+  Left = 0
+  Top = 0
+  Caption = 'Form20'
+  ClientHeight = 200
+  ClientWidth = 362
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 24
+    Width = 180
+    Height = 33
+    Caption = #29694#22312#12398'CO2'#28611#24230
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 96
+    Top = 80
+    Width = 153
+    Height = 52
+    Caption = '400ppm'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -43
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 159
+    Width = 180
+    Height = 33
+    Caption = #29694#22312#12398'CO2'#28611#24230
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
+  object WUni232c1: TWUni232c
+    Port = 9
+    BaudRate = 9600
+    ParityBits = ParityNone
+    ByteSize = Bit8
+    StopBits = Stopbit1
+    FlowControls = CtrlNone
+    Left = 104
+    Top = 352
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 192
+    Top = 352
+  end
+end
